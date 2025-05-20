@@ -1,0 +1,50 @@
+<ion-content [@fade] class="login-page">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>Bienvenido de nuevo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="login-container">
+    <div class="input-section email-section">
+      <ion-item lines="none" class="input-item">
+        <ion-icon slot="start" name="mail-outline" color="secondary"></ion-icon>
+        <ion-input 
+          label="Correo"
+          labelPlacement="floating"
+          placeholder="correo@dominio.com"
+          type="email"
+          [(ngModel)]="email"
+          class="custom-input">
+        </ion-input>
+      </ion-item>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="input-section password-section">
+      <ion-item lines="none" class="input-item">
+        <ion-icon slot="start" name="lock-closed-outline" color="secondary"></ion-icon>
+        <ion-input 
+          label="Contraseña" 
+          labelPlacement="floating" 
+          placeholder="••••••••"
+          [type]="showPassword ? 'text' : 'password'"
+          [(ngModel)]="password"
+          class="custom-input">
+        </ion-input>
+        <ion-button fill="clear" slot="end" (click)="togglePassword()">
+          <ion-icon [name]="showPassword ? 'eye-off-outline' : 'eye-outline'"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </div>
+
+    <ion-button 
+      expand="block" 
+      shape="round" 
+      class="login-button"
+      (click)="login()">
+      Acceder
+    </ion-button>
+  </div>
+</ion-content>

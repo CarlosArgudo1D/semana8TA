@@ -1,0 +1,80 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #eaf6f6;
+}
+
+.welcome-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 32px 24px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 3.5rem;
+  color: #22c55e; 
+  margin-bottom: 16px;
+}
+
+.welcome-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #0e7490;     
+  margin-bottom: 8px;
+}
+
+.welcome-subtitle {
+  font-size: 1.1rem;
+  color: #334155; 
+  margin-bottom: 16px;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1e293b; 
+  margin-bottom: 12px;
+}
+
+.info-text {
+  font-size: 1rem;
+  color: #64748b; 
+  line-height: 1.5;
+}
+
+.action-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  ion-button {
+    height: 52px;
+    font-weight: 600;
+    --border-radius: 28px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    ion-icon {
+      font-size: 1.2rem;
+      margin-right: 8px;
+    }
+  }
+
+  .profile-button {
+    --background: linear-gradient(135deg, #14b8a6, #06b6d4); 
+    color: white;
+  }
+
+  .logout-button {
+    --background: linear-gradient(135deg, #212274, #11085a);
+    color: white;
+  }
+}
